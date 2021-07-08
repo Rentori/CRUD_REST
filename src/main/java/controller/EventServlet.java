@@ -1,10 +1,8 @@
 package controller;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import model.Event;
 import service.EventService;
-import utilities.HibernateProxyTypeAdapter;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -16,14 +14,11 @@ import java.util.List;
 @WebServlet(name = "EventServlet", value = "/EventServlet")
 public class EventServlet extends HttpServlet {
     private final EventService eventService = new EventService();
-    private Gson gson = null;
 
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        GsonBuilder gsonBuilder = new GsonBuilder();
-        gsonBuilder.registerTypeAdapterFactory(HibernateProxyTypeAdapter.FACTORY);
-        gson = gsonBuilder.create();
+        Gson gson = new Gson();
 
         PrintWriter printWriter = response.getWriter();
         response.setCharacterEncoding("UTF-8");
