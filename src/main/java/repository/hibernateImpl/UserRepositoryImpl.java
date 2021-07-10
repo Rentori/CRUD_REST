@@ -77,7 +77,7 @@ public class UserRepositoryImpl implements UserRepository {
         query.setParameter("id", aLong);
         try {
             Object queryResult = query.getSingleResult();
-            user= (User) queryResult;
+            user = (User) queryResult;
         } catch (NoResultException e) {
             System.out.println("Entity not found");
         }

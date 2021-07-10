@@ -17,10 +17,15 @@ public class File {
     private String name;
 
     @ToString.Exclude
-    @OneToOne(mappedBy = "file")
+    @OneToOne(mappedBy = "file", cascade = CascadeType.ALL, optional = true)
     private Event event;
 
     public File() {
+    }
+
+    public File(Long id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
     public File(String name) {

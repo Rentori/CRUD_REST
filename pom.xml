@@ -75,10 +75,10 @@
             <plugin>
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
-                <version>7.10.0</version>
+                <version>7.11.1</version>
                 <configuration>
                     <configFiles>
-                        <configFile>src/main/resources/db.migration/flyway.properties</configFile>
+                        <configFile>src/main/resources/flyway.properties</configFile>
                     </configFiles>
                 </configuration>
             </plugin>

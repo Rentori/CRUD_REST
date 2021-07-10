@@ -40,4 +40,11 @@ public class User {
         this.lastName = lastName;
         this.eventId = eventId;
     }
+
+    public User(Long id, String firstName, String lastName, Long eventId) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.eventId = eventId;
+    }
 }

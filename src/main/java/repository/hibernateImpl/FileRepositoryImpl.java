@@ -13,7 +13,7 @@ public class FileRepositoryImpl implements FileRepository {
     private static FileRepositoryImpl instance;
     private static final SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 
-    private FileRepositoryImpl(){
+    private FileRepositoryImpl() {
     }
 
     public static FileRepositoryImpl getInstance() {

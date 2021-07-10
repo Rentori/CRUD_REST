@@ -17,7 +17,7 @@ public class Event {
     @Column(name = "event_name")
     private String name;
 
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "file_id", referencedColumnName = "id")
     private File file;
 
@@ -25,11 +25,17 @@ public class Event {
     @ManyToMany(mappedBy = "events", fetch = FetchType.LAZY)
     private List<User> users;
 
-    public Event() {
+    public Event(Long id, String name, File file) {
+        this.id = id;
+        this.name = name;
+        this.file = file;
     }
 
     public Event(String name, File file) {
         this.name = name;
         this.file = file;
+    }
+
+    public Event() {
     }
 }
