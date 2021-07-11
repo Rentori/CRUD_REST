@@ -1,1 +1,1 @@
-web: java $ Java_OPTS -jar target / dependency / webapp-runner.jar –port $ PORT target / *. war
+web: java -cp target/classes/;target/dependency/* src/main/java/controller/UserServlet.java
