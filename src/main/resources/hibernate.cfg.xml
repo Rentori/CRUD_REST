@@ -7,9 +7,9 @@
         <property name="hibernate.enable_lazy_load_no_trans">true</property>
         <property name="hibernate.dialect"> org.hibernate.dialect.MySQLDialect </property>
         <property name="hibernate.connection.driver_class"> com.mysql.jdbc.Driver </property>
-        <property name="hibernate.connection.url"> jdbc:mysql://localhost/crud_rest?useLegacyDatetimeCode=false&amp;serverTimezone=UTC </property>
-        <property name="hibernate.connection.username"> root </property>
-        <property name="hibernate.connection.password"> root </property>
+        <property name="hibernate.connection.url"> eu-cdbr-west-01.cleardb.com?useLegacyDatetimeCode=false&amp;serverTimezone=UTC </property>
+        <property name="hibernate.connection.username"> b4cbcb2499c4b6 </property>
+        <property name="hibernate.connection.password"> 099f5638 </property>
         <mapping class="model.User"/>
         <mapping class="model.File"/>
         <mapping class="model.Event"/>

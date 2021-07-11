@@ -1,1 +1,1 @@
-web: java -cp target/classes/;target/dependency/* src/main/java/controller/UserServlet.java
+web: java -cp target/classes/;target/dependency/* src/main/java/controller/
