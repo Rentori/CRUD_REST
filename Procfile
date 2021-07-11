@@ -1,1 +1,1 @@
-web: java -cp target/classes/;target/dependency/* src/main/java/controller/
+web: sh target/bin/webapp
