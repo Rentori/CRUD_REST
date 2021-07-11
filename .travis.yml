@@ -1,6 +1,8 @@
 language:
   java
+jdk:
+  -openjdk16
 install:
   true
-jdk:
-  - openjdk16
+script:
+  mvn clean package -DskipTests=true
