@@ -22,6 +22,7 @@ public class FileServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter printWriter = response.getWriter();
         response.setContentType("application/json");
+        response.setCharacterEncoding("UTF-8");
         String id = request.getParameter("id");
 
         if (id == null) {
