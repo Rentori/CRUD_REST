@@ -57,7 +57,6 @@ public class FileRepositoryImpl implements FileRepository {
         Transaction transaction = session.beginTransaction();
 
         File file = session.get(File.class, aLong);
-        session.save(file);
 
         transaction.commit();
         session.close();
