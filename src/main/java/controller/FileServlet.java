@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-@WebServlet(name = "FileServlet", value = "/FileServlet")
+@WebServlet(name = "FileServlet", urlPatterns = "/FileServlet")
 public class FileServlet extends HttpServlet {
     private final FileServiceImpl fileService = new FileServiceImpl();
     private final Gson gson = GsonService.getInstance();
