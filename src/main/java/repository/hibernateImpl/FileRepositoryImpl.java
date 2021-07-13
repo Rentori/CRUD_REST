@@ -56,7 +56,7 @@ public class FileRepositoryImpl implements FileRepository {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
 
-        File file = session.get(File.class, aLong);
+        File file = (File) session.createQuery("FROM files WHERE id =: id").setParameter("id", aLong).uniqueResult();
 
         transaction.commit();
         session.close();
