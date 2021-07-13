@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="service.FileServiceTest" time="0.015" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="service.FileServiceTest" time="0.017" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="16.0.1+9-24"/>
@@ -63,6 +63,6 @@
   <testcase classname="service.FileServiceTest" name="testSave" time="0.011"/>
   <testcase classname="service.FileServiceTest" name="testGetById" time="0.001"/>
   <testcase classname="service.FileServiceTest" name="testDeleteById" time="0.001"/>
-  <testcase classname="service.FileServiceTest" name="testGetAll" time="0.001"/>
-  <testcase classname="service.FileServiceTest" name="testUpdate" time="0.001"/>
+  <testcase classname="service.FileServiceTest" name="testGetAll" time="0.002"/>
+  <testcase classname="service.FileServiceTest" name="testUpdate" time="0.002"/>
 </testsuite>
