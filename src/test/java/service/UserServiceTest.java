@@ -35,7 +35,7 @@ public class UserServiceTest extends TestCase {
 
     @Test
     public void testSave() {
-        when(userRepository.save(any())).thenReturn(user);
+        when(userRepository.save((User) any())).thenReturn(user);
         assertEquals(userService.save(user), new User(1L, "test", "test", 1L));
 
         session.save(user);
@@ -44,7 +44,7 @@ public class UserServiceTest extends TestCase {
 
     @Test
     public void testUpdate() {
-        when(userRepository.update(any())).thenReturn(user);
+        when(userRepository.update((User) any())).thenReturn(user);
         assertEquals(userService.update(user), new User(1L, "test", "test", 1L));
 
         session.save(user);

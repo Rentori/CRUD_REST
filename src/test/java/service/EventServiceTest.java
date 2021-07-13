@@ -39,7 +39,7 @@ public class EventServiceTest extends TestCase {
 
     @Test
     public void testSave() {
-        when(eventRepository.save(any())).thenReturn(event);
+        when(eventRepository.save((Event) any())).thenReturn(event);
         assertEquals(eventService.save(event), new Event(1L, "test", new File(1L)));
 
         session.save(event);
@@ -48,7 +48,7 @@ public class EventServiceTest extends TestCase {
 
     @Test
     public void testUpdate() {
-        when(eventRepository.update(any())).thenReturn(event);
+        when(eventRepository.update((Event) any())).thenReturn(event);
         assertEquals(eventService.update(event), new Event(1L, "test", new File(1L)));
 
         session.save(event);

@@ -36,7 +36,7 @@ public class FileServiceTest extends TestCase {
 
     @Test
     public void testSave() {
-        when(fileRepository.save(any())).thenReturn(file);
+        when(fileRepository.save((File) any())).thenReturn(file);
         assertEquals(fileService.save(new File(1L, "test")), file);
 
         session.save(file);
@@ -45,7 +45,7 @@ public class FileServiceTest extends TestCase {
 
     @Test
     public void testUpdate() {
-        when(fileRepository.update(any())).thenReturn(file);
+        when(fileRepository.update((File) any())).thenReturn(file);
         assertEquals(fileService.update(new File(1L, "test")), file);
 
         session.update(file);
