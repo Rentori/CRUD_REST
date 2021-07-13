@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="service.EventServiceTest" time="0.34" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="service.EventServiceTest" time="0.315" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="16.0.1+9-24"/>
@@ -60,7 +60,7 @@
     <property name="sun.stdout.encoding" value="cp866"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="service.EventServiceTest" name="testSave" time="0.335"/>
+  <testcase classname="service.EventServiceTest" name="testSave" time="0.31"/>
   <testcase classname="service.EventServiceTest" name="testGetById" time="0.001"/>
   <testcase classname="service.EventServiceTest" name="testDeleteById" time="0.002"/>
   <testcase classname="service.EventServiceTest" name="testGetAll" time="0.001"/>

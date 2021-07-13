@@ -5,22 +5,27 @@
          version="4.0">
     <servlet>
         <servlet-name>UserServlet</servlet-name>
-        <servlet-class>controller.UserServlet</servlet-class>
+        <servlet-class>servlet.UserServlet</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>EventServlet</servlet-name>
-        <servlet-class>controller.EventServlet</servlet-class>
+        <servlet-class>servlet.EventServlet</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>FileServlet</servlet-name>
-        <servlet-class>controller.FileServlet</servlet-class>
+        <servlet-class>servlet.FileServlet</servlet-class>
     </servlet>
     
     <servlet-mapping>
         <servlet-name>UserServlet</servlet-name>
         <url-pattern>/UserServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>

@@ -6,6 +6,8 @@
 
     <groupId>org.example</groupId>
     <artifactId>CRUD_REST</artifactId>
+    <packaging>jar</packaging>
+    <url>http://maven.apache.org</url>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -13,6 +15,24 @@
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>8.5.23</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+            <version>8.5.23</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-jasper</artifactId>
+            <version>8.5.23</version>
+        </dependency>
 
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -52,7 +72,6 @@
             <version>9.0.27.1</version>
             <scope>provided</scope>
         </dependency>
-
 
         <dependency>
             <groupId>junit</groupId>
@@ -128,6 +147,29 @@
                                 </artifactItem>
                             </artifactItems>
                         </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>appassembler-maven-plugin</artifactId>
+                <version>2.0.0</version>
+                <configuration>
+                    <assembleDirectory>target</assembleDirectory>
+                    <programs>
+                        <program>
+                            <mainClass>launch.Main</mainClass>
+                            <name>webapp</name>
+                        </program>
+                    </programs>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>assemble</goal>
+                        </goals>
                     </execution>
                 </executions>
             </plugin>
