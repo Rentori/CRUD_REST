@@ -27,8 +27,7 @@ public class UserGsonService implements JsonSerializer<User>, JsonDeserializer<U
         String firstName = jsonObject.get("first_name").getAsString();
         String lastName = jsonObject.get("last_name").getAsString();
         Long eventId = jsonObject.get("event_id").getAsLong();
-        User user = new User(id, firstName, lastName, eventId);
 
-        return user;
+        return new User(id, firstName, lastName, eventId);
     }
 }

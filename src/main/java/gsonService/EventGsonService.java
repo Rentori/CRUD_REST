@@ -23,8 +23,7 @@ public class EventGsonService implements JsonSerializer<Event>, JsonDeserializer
         Long id = jsonObject.get("id").getAsLong();
         String name = jsonObject.get("name").getAsString();
         Long fileId = jsonObject.get("file_id").getAsLong();
-        Event event = new Event(id, name, new File(fileId));
 
-        return event;
+        return new Event(id, name, new File(fileId));
     }
 }

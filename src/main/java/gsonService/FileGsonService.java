@@ -20,8 +20,7 @@ public class FileGsonService implements JsonSerializer<File>, JsonDeserializer<F
         JsonObject jsonObject = jsonElement.getAsJsonObject();
         Long id = jsonObject.get("id").getAsLong();
         String name = jsonObject.get("name").getAsString();
-        File file = new File(id, name);
 
-        return file;
+        return new File(id, name);
     }
 }

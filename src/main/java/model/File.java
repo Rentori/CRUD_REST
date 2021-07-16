@@ -17,7 +17,7 @@ public class File {
     private String name;
 
     @ToString.Exclude
-    @OneToOne(mappedBy = "file", cascade = CascadeType.ALL, optional = true)
+    @OneToOne(mappedBy = "file", cascade = CascadeType.ALL)
     private Event event;
 
     public File() {
