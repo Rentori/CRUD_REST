@@ -1,4 +1,7 @@
 <html>
+<head>
+    <meta charset="utf-8">
+</head>
 <body>
 <p>
 	<span style="color: #ff0000;">
