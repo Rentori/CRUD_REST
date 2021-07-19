@@ -127,7 +127,7 @@
 		Change configuration files (flyway.properties, hibernate.cfg.xml) for DB connection;
 	</li>
 	<li>
-		Run in console: mvn flyway:migrate для инициализации БД;
+		Run in console: mvn flyway:migrate for DB init;
 	</li>
 	<li>
 		configure heroku dependencyes;
