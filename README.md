@@ -2,6 +2,8 @@ DESCRIPTION:
 
 implement a REST API that interacts with file storage and provides file access and download history.
 
+(reference for testing: https://rentori-crud-rest.herokuapp.com/)
+
 ENTITY:
 
 User
