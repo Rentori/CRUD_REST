@@ -22,17 +22,15 @@
 </p>
 <p>
 	<span style="color: #0000ff;">
-		ОПИСАНИЕ ЗАДАЧИ:&nbsp;
+		Description of the task:&nbsp;
 	</span>
 </p>
 <p>
-	<span style="font-weight: 400;">
-		 Необходимо реализовать REST API, которое взаимодействует с файловым хранилищем и предоставляет возможность получать доступ к файлам и истории загрузок.
-	</span>
+	implement a REST API that interacts with file storage and provides file access and download history.
 </p>
 <p>
 	<span style="font-weight: 400;">
-		 Сущности:
+		Entity:
 	</span>
 </p>
 <p>
@@ -49,133 +47,99 @@
 	<span style="font-weight: 400;">
 		 File
 	</span>
-    <span style="font-weight: 400;">
+	<span style="font-weight: 400;">
 		<br />
 	</span>
-    <span style="font-weight: 400;">
+	<span style="font-weight: 400;">
 		 User -&gt; List&lt;Events&gt;
 	</span>
 </p>
 <p>
 	<span style="color: #0000ff;">
 		<span style="font-weight: 400;">
-			 Требования:
+			Requirements:
 		</span>
 	</span>
 </p>
 <ul>
-    <li style="font-weight: 400;" aria-level="1">
-		<span style="font-weight: 400;">
-			 Все CRUD операции для каждой из сущностей
-		</span>
-    </li>
-    <li style="font-weight: 400;" aria-level="1">
-		<span style="font-weight: 400;">
-			 Придерживаться подхода MVC
-		</span>
-    </li>
-    <li style="font-weight: 400;" aria-level="1">
-		<span style="font-weight: 400;">
-			 Для сборки проекта использовать Maven
-		</span>
-    </li>
-    <li style="font-weight: 400;" aria-level="1">
-		<span style="font-weight: 400;">
-			 Для взаимодействия с БД - Hibernate
-		</span>
-    </li>
-    <li style="font-weight: 400;" aria-level="1">
-		<span style="font-weight: 400;">
-			 Для конфигурирования Hibernate - аннотации
-		</span>
-    </li>
-    <li style="font-weight: 400;" aria-level="1">
-		<span style="font-weight: 400;">
-			 Инициализация БД должна быть реализована с помощью flyway
-		</span>
-    </li>
-    <li style="font-weight: 400;" aria-level="1">
-		<span style="font-weight: 400;">
-			 Взаимодействие с пользователем необходимо реализовать с помощью Postman (
-		</span>
-        <a href="https://www.getpostman.com/">
-			<span style="font-weight: 400;">
-				 https://www.getpostman.com/
-			</span>
-        </a>
-        <span style="font-weight: 400;">
-			 )
-		</span>
-    </li>
-    <li style="font-weight: 400;" aria-level="1">
-		<span style="font-weight: 400;">
-			 Репозиторий должен иметь бейдж сборки travis(
-		</span>
-        <a href="https://travis-ci.com/">
-			<span style="font-weight: 400;">
-				 https://travis-ci.com/
-			</span>
-        </a>
-        <span style="font-weight: 400;">
-			 )
-		</span>
-    </li>
-    <li style="font-weight: 400;" aria-level="1">
-		<span style="font-weight: 400;">
-			 Рабочее приложение должно быть развернуто на heroku.com
-		</span>
-    </li>
+	<li>
+		All CRUD operations for each entity
+	</li>
+	<li>
+		Stick to the MVC approach
+	</li>
+	<li>
+		Use Maven to build your project
+	</li>
+	<li>
+		To interact with the database - Hibernate
+	</li>
+	<li>
+		For customizing Hibernate - annotations
+	</li>
+	<li>
+		Database initialization must be implemented using a flyway
+	</li>
+	<li>
+		User interaction must be implemented using Postman (https://www.getpostman.com/).
+	</li>
+	<li>
+		There should be a travis build icon in the repository (https://travis-ci.com/)
+	</li>
+	<li>
+		You need to deploy a working application to heroku.com.
+	</li>
 </ul>
 <h4>
 	<span style="color: #0000ff;">
 		<span style="font-weight: 400;">
-			 Технологии:
+			Technoligies:
 		</span>
 	</span>
-    Java, MySQL, Hibernate, HTTP, Servlets, Maven, Flyway.
+	Java, MySQL, Hibernate, HTTP, Servlets, Maven, Flyway.
 </h4>
 <p>
 	<span style="color: #0000ff;">
-		ШАБЛОНЫ ПРОЕКТИРОВАНИЯ:
+		Design patterns:
 	</span>
 </p>
 <ul>
-    <li>
-        Singleton
-    </li>
-    <li>
-        Factory method
-    </li>
-    <li>
-        MVC
-    </li>
+	<li>
+		Singleton
+	</li>
+	<li>
+		Factory method
+	</li>
+	<li>
+		MVC
+	</li>
 </ul>
 <p>
 	<span style="color: #0000ff;">
-		ИНСТРУКЦИЯ ПО ЗАПУСКУ:
+		Run instruction:
 	</span>
 </p>
 <ol>
-    <li>
-        Импортировать проект на локальный репозиторий;
-    </li>
-    <li>
-        Изменить файлы конфигурации (flyway.properties, hibernate.cfg.xml) для подключения к БД;
-    </li>
-    <li>
-        В консоли прописать команду mvn flyway:migrate для инициализации БД;
-    </li>
-    <li>
-        Сконфигурировать heroku;
-    </li>
-    <li>
-        Команда для запуска локального сервера:
-        <code class=" language-term">
+	<li>
+		Import your project on local repository;
+	</li>
+	<li>
+		Change configuration files (flyway.properties, hibernate.cfg.xml) for DB connection;
+	</li>
+	<li>
+		Run in console: mvn flyway:migrate для инициализации БД;
+	</li>
+	<li>
+		configure heroku dependencyes;
+	</li>
+	<li>
+		Command for local server run:
+		<code class=" language-term">
 			<span class="token input">
 				java -jar target/dependency/webapp-runner.jar target/*.war
 			</span>
-        </code>
-    </li>
+		</code>
+	</li>
 </ol>
 </body>
 </html>
