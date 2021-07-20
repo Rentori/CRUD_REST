@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-@WebServlet(name = "EventServlet", urlPatterns = "/EventServlet")
+@WebServlet(name = "Events", urlPatterns = "/v1/events")
 public class EventServlet extends HttpServlet {
     private final EventServiceImpl eventService = new EventServiceImpl();
     private final Gson gson = GsonService.getInstance();
